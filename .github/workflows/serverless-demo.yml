@@ -1,0 +1,14 @@
+name: Serverless demo
+on: [push]
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Show the temporary machine
+        run: |
+          echo "Hostname: $(hostname)"
+          cat /etc/os-release | head -2
+          uptime
+      - name: Lint every PHP file
+        run: find . -name "*.php" -print0 | xargs -0 -n1 php -l
