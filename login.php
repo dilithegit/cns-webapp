@@ -18,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <!DOCTYPE html>
 <html><head><meta charset="utf-8"><title>Login</title><link rel="stylesheet" href="style.css"></head>
 <body><div class="box">
-<h2>Login</h2>
+<h2>CNS Portal: Login</h2>
 <div class="msg"><?= $msg ?></div>
 <form method="POST">
   <label>Username</label><input name="username" required>

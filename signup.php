@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <!DOCTYPE html>
 <html><head><meta charset="utf-8"><title>Sign up</title><link rel="stylesheet" href="style.css"></head>
 <body><div class="box">
-<h2>Create account</h2>
+<h2>CNS Portal: Create account</h2>
 <div class="msg"><?= $msg ?></div>
 <form method="POST">
   <label>Username</label><input name="username" required>
